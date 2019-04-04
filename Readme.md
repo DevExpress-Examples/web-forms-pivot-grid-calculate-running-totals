@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Default.aspx](./CS/RunningTotal/Default.aspx) (VB: [Default.aspx.vb](./VB/RunningTotal/Default.aspx.vb))
+* [Default.aspx](./CS/RunningTotal/Default.aspx) (VB: [Default.aspx](./VB/RunningTotal/Default.aspx))
 * **[Default.aspx.cs](./CS/RunningTotal/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/RunningTotal/Default.aspx.vb))**
 <!-- default file list end -->
 # ASPxPivotGrid - How to calculate running totals
