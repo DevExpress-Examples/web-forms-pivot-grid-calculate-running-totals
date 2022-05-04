@@ -1,8 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RunningTotal.DefaultForm" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v17.2, Version=17.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -23,25 +23,44 @@
                 </td>
             </tr>
         </table>
-        <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" DataSourceID="NwindDataSource"
-            CssClass="" Width="100%">
-            <OptionsView ShowFilterHeaders="False" ShowColumnTotals="False" />
-            <Fields>
-                <dx:PivotGridField Area="RowArea" AreaIndex="0" FieldName="ProductName" ID="fieldProductName"
-                    Caption="Product" />
-                <dx:PivotGridField Area="ColumnArea" AreaIndex="0" FieldName="OrderDate" ID="fieldOrderDate"
-                    Caption="Year" GroupInterval="DateYear" />
-                <dx:PivotGridField Area="ColumnArea" AreaIndex="1" FieldName="OrderDate" Caption="Quarter"
-                    GroupInterval="DateQuarter" ID="fieldQuarter" ValueFormat-FormatString="Qtr {0}"
-                    ValueFormat-FormatType="Numeric" />
-                <dx:PivotGridField Area="DataArea" AreaIndex="0" FieldName="ProductAmount" ID="fieldProductAmount"
-                    Caption="Product Sales" />
-            </Fields>
+        <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" DataSourceID="SqlDataSource1" Width="100%" ClientIDMode="AutoID" IsMaterialDesign="False">
             <OptionsView HorizontalScrollBarMode="Auto" />
             <OptionsFilter NativeCheckBoxes="False" />
+            <Fields>
+                <dx:PivotGridField Area="RowArea" AreaIndex="0" ID="fieldProductName1"
+                    Caption="Product" Name="fieldProductName1" >
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="ProductName" />
+                    </DataBindingSerializable>
+                </dx:PivotGridField>
+                <dx:PivotGridField Area="ColumnArea" AreaIndex="0" ID="fieldOrderDate1"
+                    Caption="Year" Name="fieldOrderDate1" >
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear" />
+                    </DataBindingSerializable>
+                </dx:PivotGridField>
+                <dx:PivotGridField Area="ColumnArea" AreaIndex="1" Caption="Quarter" ID="fieldQuarter" ValueFormat-FormatString="Qtr {0}"
+                    ValueFormat-FormatType="Numeric" >
+<ValueFormat FormatString="Qtr {0}" FormatType="Numeric"></ValueFormat>
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateQuarter" />
+                    </DataBindingSerializable>
+                </dx:PivotGridField>
+                <dx:PivotGridField Area="DataArea" AreaIndex="0" ID="fieldProductAmount"
+                    Caption="Product Sales" Name="fieldProductAmount1" >
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="ProductAmount" />
+                    </DataBindingSerializable>
+                </dx:PivotGridField>
+            </Fields>
+            <OptionsView ShowFilterHeaders="False" ShowColumnTotals="False" />
+            <OptionsData DataProcessingEngine="Optimized" />
         </dx:ASPxPivotGrid>
-        <asp:AccessDataSource ID="NwindDataSource" runat="server" DataFile="~/App_Data/nwind.mdb"
-            SelectCommand="SELECT * FROM [CustomerReports]"></asp:AccessDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+            SelectCommand="SELECT * FROM [CustomerReports]"></asp:SqlDataSource>
+
     </div>
     </form>
 </body>
