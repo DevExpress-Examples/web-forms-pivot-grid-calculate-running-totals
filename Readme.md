@@ -6,7 +6,7 @@
 
 This example demonstrates how to include previous cell values in values of the next cell. 
 
-[RunningTotalBinding](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.RunningTotalBinding) is used to calculate cumulative values.
+[RunningTotalBinding](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.RunningTotalBinding?p=netframework) is used to calculate cumulative values.
 
 This example includes two check boxes. Enable one of them or both depending on your needs:
 - The **Include Previous Quarter Sales into the Values of the Next Quarter** check box includes previous quarter sales in the next quarter sales value. 
