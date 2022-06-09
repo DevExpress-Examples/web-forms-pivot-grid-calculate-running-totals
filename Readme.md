@@ -6,10 +6,12 @@
 
 This example demonstrates how to include previous cell values in values of the next cell. 
 
-In this example:
-- enable the **Include Previous Quarter Sales into the Values of the Next Quarter** check box to include previous quarter sales in the next quarter sales value. 
+[RunningTotalBinding](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.RunningTotalBinding) is used to calculate cumulative values.
 
-- enable the **Allow Cross-Group Running Totals Accumulation** check box specify whether running totals are calculated independently within individual groups or for the entire Pivot Grid.
+This example includes two check boxes. Enable one of them or both depending on your needs:
+- The **Include Previous Quarter Sales into the Values of the Next Quarter** check box includes previous quarter sales in the next quarter sales value. 
+
+- The **Allow Cross-Group Running Totals Accumulation** check box allows you to specify whether running totals are calculated independently within individual groups or for the entire Pivot Grid.
 
 ## Files to Look At
 
@@ -19,3 +21,8 @@ In this example:
 ## Documentation
 
 - [Calculate Running Totals](https://docs.devexpress.com/AspNet/119876/components/pivot-grid/examples/data-shaping/how-to-calculate-running-totals)
+- [Data Binding API](https://docs.devexpress.com/CoreLibraries/401533/devexpress-pivot-grid-core-library/data-binding-api)
+
+## More Examples
+
+- [Pivot Grid for Web Forms - How to use Data Binding API](https://github.com/DevExpress-Examples/aspxpivotgrid-field-calculation-bindings)
