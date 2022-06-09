@@ -3,20 +3,20 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T590001)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+# Pivot Grid for Web Forms - How to calculate running totals
 
-* [Default.aspx](./CS/RunningTotal/Default.aspx) (VB: [Default.aspx](./VB/RunningTotal/Default.aspx))
-* **[Default.aspx.cs](./CS/RunningTotal/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/RunningTotal/Default.aspx.vb))**
-<!-- default file list end -->
-# ASPxPivotGrid - How to calculate running totals
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t590001/)**
-<!-- run online end -->
+This example demonstrates how to include previous cell values in values of the next cell. 
 
+In this example:
+- enable the **Include Previous Quarter Sales into the Values of the Next Quarter** check box to include previous quarter sales in the next quarter sales value. 
 
-This example demonstrates how to include previous cell values in values of the next cell. To calculate cumulative values, set the <a href="http://help.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_RunningTotaltopic">RunningTotal</a> property of the corresponding field to <strong>true</strong>. <br>In this example, enable the <strong>Include Previous Quarter Sales into the Values of the Next Quarter</strong> check box to include previous quarter sales in the next quarter sales value. The <strong>Allow Cross-Group Running Totals Accumulation</strong> check box allows you to specify whether running totals are calculated independently within individual groups or for the entire Pivot Grid.<br>See also: <a href="https://documentation.devexpress.com/AspNet/17523/ASP-NET-WebForms-Controls">Running Totals</a>
+- enable the **Allow Cross-Group Running Totals Accumulation** check box specify whether running totals are calculated independently within individual groups or for the entire Pivot Grid.
 
-<br/>
+## Files to Look At
 
+- [Default.aspx](./CS/RunningTotal/Default.aspx) (VB: [Default.aspx](./VB/RunningTotal/Default.aspx))
+- [Default.aspx.cs](./CS/RunningTotal/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/RunningTotal/Default.aspx.vb))
 
+## Documentation
+
+- [Calculate Running Totals](https://docs.devexpress.com/AspNet/119876/components/pivot-grid/examples/data-shaping/how-to-calculate-running-totals)
