@@ -4,7 +4,8 @@
 <!-- default badges end -->
 # Pivot Grid for Web Forms - How to calculate running totals
 
-This example demonstrates how to include previous cell values in values of the next cell. 
+This example demonstrates how to include previous cell values in the next cell's values. 
+
 
 [RunningTotalBinding](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.RunningTotalBinding?p=netframework) is used to calculate cumulative values.
 
