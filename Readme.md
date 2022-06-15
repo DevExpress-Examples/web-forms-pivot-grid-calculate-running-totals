@@ -20,7 +20,6 @@ This example includes two check boxes. Enable one of them or both depending on y
 
 ## Documentation
 
-- [Calculate Running Totals](https://docs.devexpress.com/AspNet/119876/components/pivot-grid/examples/data-shaping/how-to-calculate-running-totals)
 - [Data Binding API](https://docs.devexpress.com/CoreLibraries/401533/devexpress-pivot-grid-core-library/data-binding-api)
 
 ## More Examples
