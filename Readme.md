@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Pivot Grid for Web Forms - How to calculate running totals
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t590001/)**
-<!-- run online end -->
 
 This example demonstrates how to include previous cell values in the next cell's values. 
 
@@ -18,7 +15,7 @@ This example includes two check boxes. Enable one of them or both depending on y
 
 - The **Allow Cross-Group Running Totals Accumulation** check box allows you to specify whether running totals are calculated independently within individual groups or for the entire Pivot Grid.
 
-## Files to Look At
+## Files to Review
 
 - [Default.aspx](./CS/RunningTotal/Default.aspx) (VB: [Default.aspx](./VB/RunningTotal/Default.aspx))
 - [Default.aspx.cs](./CS/RunningTotal/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/RunningTotal/Default.aspx.vb))
