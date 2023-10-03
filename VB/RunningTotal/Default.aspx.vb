@@ -1,8 +1,9 @@
-﻿Imports System
+Imports System
 
 Namespace RunningTotal
-    Partial Public Class DefaultForm
-        Inherits System.Web.UI.Page
+
+    Public Partial Class DefaultForm
+        Inherits Web.UI.Page
 
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
             ASPxPivotGrid1.Fields("fieldQuarter").RunningTotal = cbRunningTotals.Checked
